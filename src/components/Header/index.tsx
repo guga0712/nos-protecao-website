@@ -7,15 +7,11 @@ import {
     IconButton,
     Button,
     useDisclosure,
-    useColorModeValue,
     Stack,
     Divider,
-    Collapse,
-    Accordion,
 } from '@chakra-ui/react';
 import { HamburgerIcon, CloseIcon } from '@chakra-ui/icons';
 import { FaWhatsapp } from 'react-icons/fa';
-import Link from 'next/link';
 import dynamic from 'next/dynamic';
 
 const NavLink = dynamic(() => import('../NavLink'), { ssr: false });
