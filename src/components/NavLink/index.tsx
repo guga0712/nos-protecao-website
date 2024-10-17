@@ -14,9 +14,10 @@ const NavLink = ({ children, href }: Props) => {
                 px={2}
                 py={1}
                 rounded="md"
+                transition="0.3s"
                 _hover={{
                     textDecoration: 'none',
-                    bg: useColorModeValue('gray.200', 'gray.700'),
+                    color: 'white'
                 }}
             >
                 {children}
