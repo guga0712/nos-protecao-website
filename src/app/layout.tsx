@@ -8,6 +8,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang='en'>
+      <head>
+        <title>Nós Proteção</title>
+      </head>
       <body>
         <Providers>{children}</Providers>
       </body>
