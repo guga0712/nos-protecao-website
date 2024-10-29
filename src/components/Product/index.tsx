@@ -26,15 +26,14 @@ const data = {
 
 export default function Product() {
   return (
-    <Flex border='1px solid' borderColor='gray.100' rounded='lg' my='25px' maxW='250px' w='full' alignItems='center' justifyContent='center'>
+    <Flex border='1px solid' borderColor='gray.100' rounded='lg' my='25px' maxW={{ base: '300px', '2xl': '350px' }} w='full' alignItems='center' justifyContent='center'>
       <Box
         bg='white'
-        width='250px'
+        width='100%'
         rounded='lg'
         shadow='lg'
         position='relative'>
         <Image src={data.imageURL} alt={`Picture of ${data.name}`} roundedTop='lg' />
-
         <Box px='6' py='4'>
           <Flex mt='2' justifyContent='space-between' alignContent='center'>
             <Box
