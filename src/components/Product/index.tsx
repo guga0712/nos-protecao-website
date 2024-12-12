@@ -2,18 +2,10 @@
 
 import {
   Flex,
-  Circle,
   Box,
   Image,
-  Badge,
-  useColorModeValue,
-  Icon,
-  chakra,
-  Tooltip,
   Button,
 } from '@chakra-ui/react'
-import { BsStar, BsStarFill, BsStarHalf } from 'react-icons/bs'
-import { FiShoppingCart } from 'react-icons/fi'
 import { GoArrowUpRight } from 'react-icons/go'
 
 const data = {
@@ -26,7 +18,7 @@ const data = {
 
 export default function Product() {
   return (
-    <Flex border='1px solid' borderColor='gray.100' rounded='lg' my='25px' maxW={{ base: '300px', '2xl': '350px' }} w='full' alignItems='center' justifyContent='center'>
+    <Flex border='1px solid' borderColor='gray.100' rounded='lg' my='25px' maxW={{ base: '100%', '2xl': '350px' }} w='full' alignItems='center' justifyContent='center'>
       <Box
         bg='white'
         width='100%'

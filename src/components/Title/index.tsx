@@ -1,10 +1,10 @@
 import { Heading } from "@chakra-ui/react";
 
-interface HelloWorldProps {
+interface TitleProps {
     text: string
 }
 
-export default function HelloWorld({ text }: HelloWorldProps) {
+export default function Title({ text }: TitleProps) {
     return (
         <Heading>{text}</Heading>
     )
