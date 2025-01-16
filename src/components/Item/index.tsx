@@ -16,7 +16,7 @@ export default function Item({ icon, title, text }: TItemProps) {
     <Flex flexDir="column" alignItems="center" gap={4}>
       {SelectedIcon && <SelectedIcon size={50} color={EColors.orange} />}
       <Heading>{title}</Heading>
-      <Text>{text}</Text>
+      <Text textAlign="center">{text}</Text>
     </Flex>
   );
 }
