@@ -31,7 +31,7 @@ export default function About() {
       gap={14}
       pb="100px"
     >
-      <Heading fontSize={{ sm: "30px", lg: "60px" }} color={EColors.orange}>
+      <Heading fontSize={{ base: "30px", lg: "60px" }} color={EColors.orange}>
         Sobre a Nós Proteção
       </Heading>
       <Text maxW="600px" textAlign="center" fontSize={20}>
@@ -44,9 +44,9 @@ export default function About() {
         w="100%"
         marginLeft={{ lg: "-10" }}
         justifyContent="space-between"
-        flexDir={{ sm: "column", lg: "row" }}
-        alignItems={{ sm: "center" }}
-        gap={{ sm: 10 }}
+        flexDir={{ base: "column", lg: "row" }}
+        alignItems={{ base: "center" }}
+        gap={{ base: 10 }}
       >
         {items.map((item, index) => {
           return (

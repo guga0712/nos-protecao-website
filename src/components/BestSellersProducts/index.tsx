@@ -4,7 +4,7 @@ import Product from "../Product";
 export default function BestSellersProducts() {
   return (
     <Flex
-      px={{ sm: "2.5", lg: "100px", xl: "200px" }}
+      px={{ base: "2.5", lg: "100px", xl: "200px" }}
       py="50px"
       flexDirection="column"
       id="produtos"

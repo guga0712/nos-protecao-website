@@ -15,18 +15,18 @@ export default function Hero() {
   return (
     <Flex
       color={EColors.orange}
-      pt={{ sm: "25px", lg: "150px" }}
+      pt={{ base: "25px", lg: "150px" }}
       gap={10}
       justifyContent={{ md: "start", lg: "space-between" }}
-      flexDirection={{ sm: "column", lg: "row" }}
-      pb={{ sm: "50px", lg: "150px" }}
+      flexDirection={{ base: "column", lg: "row" }}
+      pb={{ base: "50px", lg: "150px" }}
     >
-      <VStack alignItems="start" gap={{ sm: "5", lg: "10" }}>
+      <VStack alignItems="start" gap={{ base: "5", lg: "10" }}>
         <VStack alignItems="start">
-          <Heading lineHeight="0.8" fontSize={{ sm: "40px", lg: "70px" }}>
+          <Heading lineHeight="0.8" fontSize={{ base: "40px", lg: "70px" }}>
             Soluções em Plásticos,
           </Heading>
-          <Heading lineHeight="0.8" fontSize={{ sm: "40px", lg: "70px" }}>
+          <Heading lineHeight="0.8" fontSize={{ base: "40px", lg: "70px" }}>
             Proteção em Movimento.
           </Heading>
         </VStack>

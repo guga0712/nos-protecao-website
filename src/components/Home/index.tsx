@@ -8,7 +8,7 @@ export default function Home() {
     <Flex
       flexDir="column"
       background="linear-gradient(180deg, rgba(6,46,79,1) 35%, rgba(11,90,156,1) 100%);"
-      px={{ sm: "2.5", lg: "100px", xl: "300px" }}
+      px={{ base: "2.5", lg: "100px", xl: "300px" }}
     >
       <Header />
       <Hero />
