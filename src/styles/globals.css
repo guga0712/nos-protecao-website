@@ -4,5 +4,15 @@
   --gold-700: #d3a900;
   --gold-800: #bf9000;
   --gold-900: #9c7900;
+  --blue-500: #0b5a9c;
+  --blue-700: #084271;
+  --blue-900: #062e4f;
+  --orange-500: #f79a09;
+  --orange-700: #f58406;
+  --orange-900: #d96e04;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 

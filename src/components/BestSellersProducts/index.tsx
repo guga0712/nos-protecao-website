@@ -4,12 +4,12 @@ import Product from "../Product";
 export default function BestSellersProducts() {
   return (
     <Flex
-      px={{ base: "1.5rem", "2xl": "200px" }}
+      px={{ sm: "2.5", lg: "100px", xl: "200px" }}
       py="50px"
       flexDirection="column"
       id="produtos"
     >
-      <Heading size="lg" mb={4}>
+      <Heading size="lg" mb={4} textAlign="center">
         Produtos mais vendidos
       </Heading>
       <Divider />
