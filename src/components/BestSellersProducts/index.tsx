@@ -27,7 +27,8 @@ export default function BestSellersProducts() {
   return (
     <Flex
       px={{ base: "2.5", lg: "100px", xl: "200px" }}
-      py="50px"
+      pt="50px"
+      pb="100px"
       flexDirection="column"
       id="produtos"
       gap={14}

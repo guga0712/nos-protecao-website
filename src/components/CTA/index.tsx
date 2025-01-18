@@ -20,9 +20,9 @@ export default function CTA() {
         how SecureCargo can protect your valuable shipments.
       </Text>
       <Button
-        background={EColors.blue}
+        background={EColors.darkblue}
         color={EColors.white}
-        _hover={{ background: EColors.darkblue }}
+        _hover={{ background: EColors.deepblue }}
       >
         Entre em contato
       </Button>

@@ -22,12 +22,12 @@ export default function Hero() {
       pb={{ base: "50px", lg: "200px" }}
       alignItems="center"
     >
-      <VStack alignItems="start" gap={{ base: "5", lg: "5" }}>
+      <VStack alignItems="start" gap={{ base: "5", lg: "10" }}>
         <VStack alignItems="start">
-          <Heading lineHeight="0.8" fontSize={{ base: "40px", lg: "65px" }}>
+          <Heading lineHeight="1" fontSize={{ base: "40px", lg: "65px" }}>
             Soluções em Plásticos,
           </Heading>
-          <Heading lineHeight="0.8" fontSize={{ base: "40px", lg: "65px" }}>
+          <Heading lineHeight="1" fontSize={{ base: "40px", lg: "65px" }}>
             Proteção em Movimento.
           </Heading>
         </VStack>
