@@ -15,18 +15,19 @@ export default function Hero() {
   return (
     <Flex
       color={EColors.orange}
-      pt={{ base: "25px", lg: "150px" }}
+      pt={{ base: "25px", lg: "200px" }}
       gap={10}
       justifyContent={{ md: "start", lg: "space-between" }}
       flexDirection={{ base: "column", lg: "row" }}
-      pb={{ base: "50px", lg: "150px" }}
+      pb={{ base: "50px", lg: "200px" }}
+      alignItems="center"
     >
-      <VStack alignItems="start" gap={{ base: "5", lg: "10" }}>
+      <VStack alignItems="start" gap={{ base: "5", lg: "5" }}>
         <VStack alignItems="start">
-          <Heading lineHeight="0.8" fontSize={{ base: "40px", lg: "70px" }}>
+          <Heading lineHeight="0.8" fontSize={{ base: "40px", lg: "65px" }}>
             Soluções em Plásticos,
           </Heading>
-          <Heading lineHeight="0.8" fontSize={{ base: "40px", lg: "70px" }}>
+          <Heading lineHeight="0.8" fontSize={{ base: "40px", lg: "65px" }}>
             Proteção em Movimento.
           </Heading>
         </VStack>
@@ -48,7 +49,7 @@ export default function Hero() {
       <Image
         src="/caminhao-truck.jpg"
         alt={"Place"}
-        width={500}
+        width={600}
         rounded="md"
       ></Image>
     </Flex>

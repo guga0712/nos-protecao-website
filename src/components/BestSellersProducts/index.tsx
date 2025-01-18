@@ -1,4 +1,4 @@
-import { Divider, Flex, Heading, HStac, Text } from "@chakra-ui/react";
+import { Divider, Flex, Heading, Text } from "@chakra-ui/react";
 import Product from "../Product";
 import { EColors } from "@/enums/EColors";
 

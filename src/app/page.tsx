@@ -1,14 +1,5 @@
-import Banner from "@/components/Banner";
-import BestSellersProducts from "@/components/BestSellersProducts";
-import Header from "@/components/Header";
-import Hero from "@/components/Hero";
-import Home from "@/components/Home";
+import Home from "@/views/Home";
 
 export default function App() {
-  return (
-    <>
-      <Home />
-      <BestSellersProducts />
-    </>
-  );
+  return <Home />;
 }
