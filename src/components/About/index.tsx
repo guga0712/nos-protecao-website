@@ -31,7 +31,7 @@ export default function About() {
       gap={14}
       pb="100px"
     >
-      <Heading fontSize={{ base: "30px", lg: "60px" }} color={EColors.orange}>
+      <Heading fontSize={{ base: "30px", lg: "50px" }} color={EColors.orange}>
         Sobre a Nós Proteção
       </Heading>
       <Text maxW="600px" textAlign="center" fontSize={20}>

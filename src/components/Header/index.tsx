@@ -29,7 +29,11 @@ export default function Header() {
   return (
     <>
       <Box color="white" fontWeight="700">
-        <Flex h={16} alignItems={"center"} justifyContent={"space-between"}>
+        <Flex
+          h={{ base: "20", lg: "16" }}
+          alignItems="center"
+          justifyContent={"space-between"}
+        >
           <IconButton
             width="fit-content"
             size="md"
@@ -40,7 +44,6 @@ export default function Header() {
             bg="transparent"
             color={EColors.orange}
             _hover={{ bg: "none" }}
-            minW={0}
           />
           <HStack alignItems={"center"} fontSize={20}>
             <Flex gap={2} color={EColors.orange} alignItems="center">
@@ -67,7 +70,7 @@ export default function Header() {
           <Button
             fontSize={24}
             bg={EColors.orange}
-            _hover={{ bg: "none" }}
+            _hover={{ bg: EColors.darkorange }}
             color={EColors.blue}
           >
             <FaWhatsapp />
@@ -87,7 +90,7 @@ export default function Header() {
               height: { duration: 0.3, ease: "easeInOut" },
               opacity: { duration: 0.2 },
             }}
-            overflow="hidden" // Evita conteúdo visível fora da animação
+            overflow="hidden"
             pb={4}
             display={{ md: "none" }}
             bg="transparent"

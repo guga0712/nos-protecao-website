@@ -1,63 +1,50 @@
-'use client'
+"use client";
 
+import { EColors } from "@/enums/EColors";
 import {
-  Flex,
-  Circle,
   Box,
   Image,
-  Badge,
-  useColorModeValue,
-  Icon,
-  chakra,
-  Tooltip,
+  Text,
   Button,
-} from '@chakra-ui/react'
-import { BsStar, BsStarFill, BsStarHalf } from 'react-icons/bs'
-import { FiShoppingCart } from 'react-icons/fi'
-import { GoArrowUpRight } from 'react-icons/go'
+  Heading,
+  HStack,
+  VStack,
+} from "@chakra-ui/react";
 
-const data = {
-  isNew: true,
-  imageURL:
-    'https://www.teckplast.com.br/wp-content/uploads/2021/08/fita_acrilica.jpgfilenameUTF-8fita_acrilica.jpg',
-  name: 'Fita Adesiva 45x100 METROS Marrom',
-  price: 250.50,
+interface IProductsProps {
+  imageUrl: string;
+  title: string;
+  description: string;
 }
 
-export default function Product() {
+export default function Product({
+  imageUrl,
+  title,
+  description,
+}: IProductsProps) {
   return (
-    <Flex border='1px solid' borderColor='gray.100' rounded='lg' my='25px' maxW={{ base: '300px', '2xl': '350px' }} w='full' alignItems='center' justifyContent='center'>
-      <Box
-        bg='white'
-        width='100%'
-        rounded='lg'
-        shadow='lg'
-        position='relative'>
-        <Image src={data.imageURL} alt={`Picture of ${data.name}`} roundedTop='lg' />
-        <Box px='6' py='4'>
-          <Flex mt='2' justifyContent='space-between' alignContent='center'>
-            <Box
-              fontSize='xl'
-              fontWeight='semibold'
-              as='h4'
-              lineHeight='tight'
-              isTruncated>
-              {data.name}
-            </Box>
-          </Flex>
-          <Flex mt='2' justifyContent='space-between' alignContent='center'>
-            <Box fontSize='2xl' color='gray.800'>
-              <Box as='span' color={'gray.600'} fontSize='lg'>
-                R$
-              </Box>
-              {data.price.toFixed(2)}
-            </Box>
-          </Flex>
-        </Box>
-        <Flex my='2' width='100%' justifyContent='center'>
-          <Button colorScheme='green' rightIcon={<GoArrowUpRight />} mb={4}>Comprar agora</Button>
-        </Flex>
-      </Box>
-    </Flex >
-  )
+    <Box
+      maxW="sm"
+      borderWidth="1px"
+      borderRadius={10}
+      borderColor="gray.200"
+      transition="0.5s"
+      _hover={{
+        boxShadow: "rgba(0, 0, 0, 0.24) 0px 3px 8px",
+      }}
+    >
+      <Image src={imageUrl} alt={title} borderTopRadius={10} />
+      <VStack p="8" gap={4} alignItems="start">
+        <HStack>
+          <Heading color={EColors.blue} fontSize={{ sm: "30px", lg: "30px" }}>
+            {title}
+          </Heading>
+        </HStack>
+        <Text h="100px">{description}</Text>
+        <Button w={"full"} bgColor={EColors.blue} color={EColors.white}>
+          Conheça mais
+        </Button>
+      </VStack>
+    </Box>
+  );
 }

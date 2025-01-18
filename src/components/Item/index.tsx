@@ -13,9 +13,9 @@ export default function Item({ icon, title, text }: TItemProps) {
   const SelectedIcon = Icons[icon] as LucideIcon;
 
   return (
-    <Flex flexDir="column" alignItems="center" gap={4}>
+    <Flex flexDir="column" alignItems="center" gap={2}>
       {SelectedIcon && <SelectedIcon size={50} color={EColors.orange} />}
-      <Heading>{title}</Heading>
+      <Heading fontSize="2xl">{title}</Heading>
       <Text textAlign="center">{text}</Text>
     </Flex>
   );
