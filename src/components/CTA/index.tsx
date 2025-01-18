@@ -12,9 +12,11 @@ export default function CTA() {
       py="100px"
       flexDir="column"
       textAlign="center"
-      gap={5}
+      gap={10}
     >
-      <Heading fontSize="6xl">Gostaria de saber mais?</Heading>
+      <Heading fontSize={{ base: "40px", lg: "6xl" }}>
+        Gostaria de saber mais?
+      </Heading>
       <Text fontSize={20}>
         Don't compromise on security. Get in touch with us today and discover
         how SecureCargo can protect your valuable shipments.

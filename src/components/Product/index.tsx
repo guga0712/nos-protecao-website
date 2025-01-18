@@ -40,7 +40,7 @@ export default function Product({
             {title}
           </Heading>
         </HStack>
-        <Text h="100px">{description}</Text>
+        <Text wordBreak="break-word">{description}</Text>
         <Button w={"full"} bgColor={EColors.blue} color={EColors.white}>
           Conheça mais
         </Button>

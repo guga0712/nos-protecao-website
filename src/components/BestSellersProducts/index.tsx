@@ -13,7 +13,7 @@ export default function BestSellersProducts() {
     {
       name: "SecureTrack™",
       description:
-        "Comprehensive fleet mafsjfhsaiufhaiufhaisuhaudfhaifauhdnagement system with AI-powered route optimization",
+        "Comprehensive fleet system with AI-powered route optimization",
       image: "./caminhao-truck.jpg",
     },
     {
