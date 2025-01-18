@@ -6,7 +6,7 @@ export default function CTA() {
     <Flex
       background={EColors.orange}
       color={EColors.darkblue}
-      px={{ base: "2.5", lg: "100px", xl: "200px" }}
+      px={{ base: "4", lg: "100px", xl: "200px" }}
       alignItems="center"
       justifyContent="center"
       py="100px"

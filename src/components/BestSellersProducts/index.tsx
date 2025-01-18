@@ -26,7 +26,7 @@ export default function BestSellersProducts() {
 
   return (
     <Flex
-      px={{ base: "2.5", lg: "100px", xl: "200px" }}
+      px={{ base: "4", lg: "100px", xl: "200px" }}
       pt="50px"
       pb="100px"
       flexDirection="column"
