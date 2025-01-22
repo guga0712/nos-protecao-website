@@ -15,7 +15,7 @@ export default function CTA() {
       gap={10}
     >
       <Heading fontSize={{ base: "40px", lg: "6xl" }}>
-        Gostaria de saber mais?
+        Gostaria de saber mais??
       </Heading>
       <Text fontSize={20}>
         Don't compromise on security. Get in touch with us today and discover
