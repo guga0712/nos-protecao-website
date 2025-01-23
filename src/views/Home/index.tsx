@@ -4,6 +4,7 @@ import About from "../../components/About";
 import Header from "../../components/Header";
 import BestSellersProducts from "@/components/BestSellersProducts";
 import CTA from "@/components/CTA";
+import Footer from "@/components/Footer";
 
 export default function Home() {
   return (
@@ -19,6 +20,7 @@ export default function Home() {
       </Flex>
       <BestSellersProducts />
       <CTA />
+      <Footer />
     </>
   );
 }
