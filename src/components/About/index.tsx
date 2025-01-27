@@ -6,19 +6,19 @@ import * as Icons from "lucide-react";
 export default function About() {
   const items: { icon: keyof typeof Icons; title: string; text: string }[] = [
     {
-      icon: "Truck",
-      title: "Veículos Seguros",
-      text: "State-of-the-art technology for maximum protection",
+      icon: "ShieldCheck",
+      title: "Qualidade garantida",
+      text: "Produtos resistentes e duráveis para máxima proteção.",
     },
     {
-      icon: "Shield",
-      title: "Proteção de Cargas",
-      text: "Trusted by leading businesses worldwide",
+      icon: "ScrollText",
+      title: "Variedade completa",
+      text: "Tudo o que você precisa em um só lugar.",
     },
     {
-      icon: "Clock",
-      title: "Tempo de Garantia",
-      text: "Protecting cargo across international borders",
+      icon: "PiggyBank",
+      title: "Custo-benefício",
+      text: "Soluções acessíveis sem abrir mão da segurança.",
     },
   ];
 
@@ -35,10 +35,10 @@ export default function About() {
         Sobre a Nós Proteção
       </Heading>
       <Text maxW="600px" textAlign="center" fontSize={20}>
-        With over two decades of experience, SecureCargo leads the industry in
-        innovative cargo security solutions. Our commitment to quality and
-        reliability ensures your goods are protected at every step of their
-        journey.
+        Na Nós Proteção, acreditamos que a segurança da sua carga é prioridade.
+        Oferecemos soluções confiáveis em embalagens e proteção para transporte
+        e armazenamento, garantindo que seus produtos cheguem ao destino
+        intactos e protegidos.
       </Text>
       <Flex
         w="100%"

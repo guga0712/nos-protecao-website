@@ -33,7 +33,7 @@ export default function Product({
         boxShadow: "rgba(0, 0, 0, 0.24) 0px 3px 8px",
       }}
     >
-      <Image src={imageUrl} alt={title} borderTopRadius={10} />
+      <Image src={imageUrl} alt={title} borderTopRadius={10} w="full" />
       <VStack p="8" gap={4} alignItems="start">
         <HStack>
           <Heading color={EColors.blue} fontSize={{ sm: "30px", lg: "30px" }}>

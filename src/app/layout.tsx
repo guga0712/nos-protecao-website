@@ -3,6 +3,7 @@ import { Providers } from "./providers";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://nosprotecaodecarga.com.br"),
   title: "Nós Proteção | Segurança e Qualidade para Sua Carga",
   description:
     "A Nós Proteção oferece as melhores soluções para embalar, proteger e transportar sua carga com segurança. Filmes Stretch, Lonas Plásticas, Madeirites e muito mais! Proteja seus produtos com qualidade e resistência.",
@@ -19,20 +20,26 @@ export const metadata: Metadata = {
   authors: [{ name: "Nós Proteção" }],
   robots: "index, follow",
   openGraph: {
-    title: "Nós Proteção | Segurança e Qualidade para Sua Carga",
+    title: "🚛 Nós Proteção | Segurança e Qualidade para Sua Carga",
     description:
       "Embalagens e proteções de carga com máxima resistência e durabilidade. Confira nossa linha completa de Filmes Stretch, Lonas Plásticas, Madeirites e muito mais!",
-    url: "http://nosprotecaodecarga.com.br/",
+    url: "https://nosprotecaodecarga.com.br/",
     siteName: "Nós Proteção",
     images: [
       {
-        url: "http://nosprotecaodecarga.com.br/logo-orange.jpg",
+        url: "/logo-orange.png",
         width: 500,
         height: 500,
         alt: "Proteção de carga com segurança e resistência",
       },
     ],
     type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Nós Proteção | Segurança e Qualidade para Sua Carga",
+    description: "Proteja sua carga com resistência e qualidade.",
+    images: ["/logo-orange.png"], // Caminho relativo funciona corretamente agora
   },
 };
 

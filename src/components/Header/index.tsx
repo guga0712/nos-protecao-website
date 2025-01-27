@@ -6,7 +6,7 @@ import {
   HStack,
   IconButton,
   Button,
-  useDisclosure,
+  Image,
   Stack,
   Text,
 } from "@chakra-ui/react";
@@ -47,7 +47,12 @@ export default function Header() {
           />
           <HStack alignItems={"center"} fontSize={20}>
             <Flex gap={2} color={EColors.orange} alignItems="center">
-              <Truck size={36} />
+              <Image
+                src="/logo-orange.png"
+                alt={"Place"}
+                width={39}
+                rounded="md"
+              />
               <Text>Nós Proteção</Text>
             </Flex>
           </HStack>

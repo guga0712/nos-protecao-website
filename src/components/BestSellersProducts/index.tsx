@@ -5,22 +5,22 @@ import { EColors } from "@/enums/EColors";
 export default function BestSellersProducts() {
   const products = [
     {
-      name: "SmartLock Pro",
+      name: "Filme Stretch",
       description:
-        "Advanced GPS-enabled lock for real-time tracking and tamper alerts",
-      image: "./caminhao-truck.jpg",
+        "Ideal para envolvimento e fixação de cargas, proporcionando proteção contra poeira, umidade e movimentação indesejada, alta elasticidade e resistência.",
+      image: "./filme-strech.png",
     },
     {
-      name: "SecureTrack™",
+      name: "Lonas Plásticas",
       description:
-        "Comprehensive fleet system with AI-powered route optimization",
-      image: "./caminhao-truck.jpg",
+        "Versáteis e super resistentes, protegem sua carga contra chuva, sol e poeira. Essenciais para coberturas, armazenagem e transporte seguro.",
+      image: "./lona-plastica.png",
     },
     {
-      name: "CargoGuard",
+      name: "Madeirites",
       description:
-        "Durable, weather-resistant cargo seals with blockchain verification",
-      image: "./caminhao-truck.jpg",
+        " Perfeitos para reforço estrutural no transporte de cargas. Duráveis, resistentes e disponíveis em diversas espessuras para atender a qualquer necessidade.",
+      image: "./madeirite.png",
     },
   ];
 
@@ -41,11 +41,14 @@ export default function BestSellersProducts() {
       >
         Nossos produtos
       </Heading>
-      <Text>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores,
-        ducimus distinctio porro similique harum deleniti voluptates nobis
-        inventore optio quibusdam sed quod consectetur tempora hic tempore quo.
-        Eveniet, qui eum?
+      <Text textAlign="center">
+        Quando o assunto é proteção, cada detalhe faz a diferença. Nossas
+        embalagens são feitas com materiais de alta qualidade, garantindo
+        resistência contra impactos, umidade e variações climáticas. Seu produto
+        protegido do início ao fim!
+        <br />
+        Trabalhamos com as melhores marcas do mercado para garantir máxima
+        proteção e durabilidade. Segurança e resistência que fazem a diferença!
       </Text>
       <Flex
         flexDirection={{ base: "column", lg: "row" }}

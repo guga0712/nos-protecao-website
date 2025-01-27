@@ -32,7 +32,8 @@ export default function Hero() {
           </Heading>
         </VStack>
         <Text color={EColors.white} fontSize={20}>
-          Premium cargo security solutions for the modern world
+          Proteção que faz a diferença: segurança, resistência e qualidade para
+          sua carga.
         </Text>
         <Button
           background={EColors.orange}

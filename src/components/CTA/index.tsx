@@ -15,18 +15,18 @@ export default function CTA() {
       gap={10}
     >
       <Heading fontSize={{ base: "40px", lg: "6xl" }}>
-        Gostaria de saber mais?
+        Proteja sua carga com excelência!
       </Heading>
       <Text fontSize={20}>
-        Don't compromise on security. Get in touch with us today and discover
-        how SecureCargo can protect your valuable shipments.
+        A melhor linha de proteção para transporte e armazenamento está aqui.
+        Conte com qualidade, resistência e o melhor custo-benefício.
       </Text>
       <Button
         background={EColors.darkblue}
         color={EColors.white}
         _hover={{ background: EColors.deepblue }}
       >
-        Entre em contato
+        Garanta já a sua proteção!
       </Button>
     </Flex>
   );
