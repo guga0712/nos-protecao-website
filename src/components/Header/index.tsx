@@ -61,7 +61,7 @@ export default function Header() {
             spacing={8}
             display={{ base: "none", md: "flex" }}
             fontWeight="500"
-            marginLeft="-10"
+            marginLeft="-20"
           >
             {Links.map((link, index) => (
               <Link

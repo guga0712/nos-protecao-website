@@ -4,7 +4,8 @@ import { Metadata } from "next";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://nosprotecaodecarga.com"),
-  title: "Nós Proteção | Segurança e Qualidade para Sua Carga",
+  title:
+    "Nós Materiais e Proteção de Carga | Segurança e Qualidade para Sua Carga",
   description:
     "A Nós Proteção oferece as melhores soluções para embalar, proteger e transportar sua carga com segurança. Filmes Stretch, Lonas Plásticas, Madeirites e muito mais! Proteja seus produtos com qualidade e resistência.",
   keywords: [
@@ -20,7 +21,8 @@ export const metadata: Metadata = {
   authors: [{ name: "Nós Proteção" }],
   robots: "index, follow",
   openGraph: {
-    title: "🚛 Nós Proteção | Segurança e Qualidade para Sua Carga",
+    title:
+      "🚛 Nós Materiais e Proteção de Carga | Segurança e Qualidade para Sua Carga",
     description:
       "Embalagens e proteções de carga com máxima resistência e durabilidade. Confira nossa linha completa de Filmes Stretch, Lonas Plásticas, Madeirites e muito mais!",
     url: "https://nosprotecaodecarga.com/",
@@ -51,7 +53,7 @@ export default function RootLayout({
   return (
     <html lang="pt-BR">
       <head>
-        <title>Nós Proteção</title>
+        <title>Nós Proteção de Carga</title>
       </head>
       <body>
         <Providers>{children}</Providers>

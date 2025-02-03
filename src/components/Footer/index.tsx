@@ -35,7 +35,6 @@ export default function Footer() {
       flexDirection={{ base: "column", lg: "row" }}
       gap={{ base: 5 }}
     >
-      {/* Lado esquerdo */}
       <Flex
         gap={2}
         color={EColors.orange}
