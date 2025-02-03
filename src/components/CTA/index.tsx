@@ -14,20 +14,30 @@ export default function CTA() {
       textAlign="center"
       gap={10}
     >
-      <Heading fontSize={{ base: "40px", lg: "6xl" }}>
-        Proteja sua carga com excelência!
-      </Heading>
-      <Text fontSize={20}>
-        A melhor linha de proteção para transporte e armazenamento está aqui.
-        Conte com qualidade, resistência e o melhor custo-benefício.
-      </Text>
-      <Button
-        background={EColors.darkblue}
-        color={EColors.white}
-        _hover={{ background: EColors.deepblue }}
+      <Flex
+        flexDir="column"
+        gap={10}
+        data-aos="fade-up"
+        data-aos-delay="200"
+        // data-aos-once="true"
+        alignItems="center"
+        justifyContent="center"
       >
-        Garanta já a sua proteção!
-      </Button>
+        <Heading fontSize={{ base: "40px", lg: "6xl" }}>
+          Proteja sua carga com excelência!
+        </Heading>
+        <Text fontSize={20}>
+          A melhor linha de proteção para transporte e armazenamento está aqui.
+          Conte com qualidade, resistência e o melhor custo-benefício.
+        </Text>
+        <Button
+          background={EColors.darkblue}
+          color={EColors.white}
+          _hover={{ background: EColors.deepblue }}
+        >
+          Garanta já a sua proteção!
+        </Button>
+      </Flex>
     </Flex>
   );
 }

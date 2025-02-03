@@ -1,20 +1,67 @@
 import { EColors } from "@/enums/EColors";
-import { Flex, HStack, Text, Image } from "@chakra-ui/react";
-import { Truck } from "lucide-react";
+import {
+  Flex,
+  HStack,
+  Text,
+  Image,
+  SimpleGrid,
+  Box,
+  Stack,
+  useColorModeValue,
+  Button,
+} from "@chakra-ui/react";
+import { Container, Truck } from "lucide-react";
+import { ReactNode } from "react";
+import { FaWhatsapp } from "react-icons/fa";
+
+const ListHeader = ({ children }: { children: ReactNode }) => {
+  return (
+    <Text fontWeight={"500"} fontSize={"lg"} mb={2}>
+      {children}
+    </Text>
+  );
+};
 
 export default function Footer() {
   return (
     <Flex
-      background={EColors.darkblue}
+      py={5}
+      w="full"
+      justifyContent="center"
+      bg={EColors.blue}
+      color={EColors.orange}
       px={{ base: "4", lg: "100px", xl: "200px" }}
-      py={{ base: "4", lg: "50px" }}
+      alignItems="center"
+      flexDirection={{ base: "column", lg: "row" }}
+      gap={{ base: 5 }}
     >
-      <HStack alignItems={"center"} fontSize={20}>
-        <Flex gap={2} color={EColors.orange} alignItems="center">
-          <Image src="/logo-orange.png" alt={"Place"} width={39} rounded="md" />
-          <Text fontWeight="700">Nós Proteção</Text>
-        </Flex>
-      </HStack>
+      {/* Lado esquerdo */}
+      <Flex
+        gap={2}
+        color={EColors.orange}
+        alignItems="center"
+        fontWeight="700"
+        flex="1"
+      >
+        <Image src="/logo-orange.png" alt={"Place"} width={39} rounded="md" />
+        <Text>Nós Proteção</Text>
+      </Flex>
+
+      <Text textAlign="center">
+        ® 2025 Nós Proteção de Carga e Embalagens 24.012.805/0001-13. Todos os
+        direitos reservados
+      </Text>
+
+      <Flex flex="1" justifyContent="flex-end">
+        <Button
+          fontSize={24}
+          bg={EColors.orange}
+          _hover={{ bg: EColors.darkorange }}
+          color={EColors.blue}
+        >
+          <FaWhatsapp />
+        </Button>
+      </Flex>
     </Flex>
   );
 }

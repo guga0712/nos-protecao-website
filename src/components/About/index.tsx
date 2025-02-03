@@ -50,7 +50,12 @@ export default function About() {
       >
         {items.map((item, index) => {
           return (
-            <Flex key={index}>
+            <Flex
+              key={index}
+              data-aos="fade-up"
+              data-aos-delay="200"
+              // data-aos-once="true"
+            >
               <Item icon={item.icon} title={item.title} text={item.text} />
             </Flex>
           );

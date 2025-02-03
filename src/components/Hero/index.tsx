@@ -1,3 +1,5 @@
+"use client";
+
 import { EColors } from "@/enums/EColors";
 import {
   Flex,
@@ -9,7 +11,6 @@ import {
   Image,
   Link,
 } from "@chakra-ui/react";
-import About from "../About";
 
 export default function Hero() {
   return (
@@ -47,12 +48,7 @@ export default function Hero() {
           Conheça nossos produtos
         </Button>
       </VStack>
-      <Image
-        src="/caminhao-truck.jpg"
-        alt={"Place"}
-        width={600}
-        rounded="md"
-      ></Image>
+      <Image src="/armazen.jpg" alt={"Place"} width={600} rounded="md"></Image>
     </Flex>
   );
 }

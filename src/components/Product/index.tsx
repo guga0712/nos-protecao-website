@@ -32,6 +32,9 @@ export default function Product({
       _hover={{
         boxShadow: "rgba(0, 0, 0, 0.24) 0px 3px 8px",
       }}
+      data-aos="fade-up"
+      data-aos-delay="200"
+      // data-aos-once="true"
     >
       <Image src={imageUrl} alt={title} borderTopRadius={10} w="full" />
       <VStack p="8" gap={4} alignItems="start">

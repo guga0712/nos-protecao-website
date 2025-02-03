@@ -33,6 +33,9 @@ export default function BestSellersProducts() {
       id="produtos"
       gap={14}
       h="full"
+      data-aos="fade-up"
+      data-aos-delay="200"
+      // data-aos-once="true"
     >
       <Heading
         fontSize={{ base: "30px", lg: "50px" }}
@@ -44,8 +47,7 @@ export default function BestSellersProducts() {
       <Text textAlign="center">
         Quando o assunto é proteção, cada detalhe faz a diferença. Nossas
         embalagens são feitas com materiais de alta qualidade, garantindo
-        resistência contra impactos, umidade e variações climáticas. Seu produto
-        protegido do início ao fim!
+        resistência contra impactos, umidade e variações climáticas.
         <br />
         Trabalhamos com as melhores marcas do mercado para garantir máxima
         proteção e durabilidade. Segurança e resistência que fazem a diferença!
