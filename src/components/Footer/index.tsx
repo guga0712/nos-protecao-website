@@ -54,6 +54,8 @@ export default function Footer() {
 
       <Flex flex="1" justifyContent="flex-end">
         <Button
+          as="a"
+          href="https://wa.me/5511979880930?text=Ol%C3%A1%2C%20eu%20gostaria%20de%20saber%20de%20mais%20produtos%20da%20N%C3%B3s%20Prote%C3%A7%C3%A3o%20de%20Cargas%20e%20Embalagens."
           fontSize={24}
           bg={EColors.orange}
           _hover={{ bg: EColors.darkorange }}

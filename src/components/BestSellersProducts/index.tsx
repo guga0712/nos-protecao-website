@@ -26,15 +26,14 @@ export default function BestSellersProducts() {
 
   return (
     <Flex
+      id="nossosprodutos"
       px={{ base: "4", lg: "100px", xl: "200px" }}
       pt="50px"
       pb="100px"
       flexDirection="column"
-      id="produtos"
       gap={14}
       h="full"
-      data-aos="fade-up"
-      data-aos-delay="200"
+
       // data-aos-once="true"
     >
       <Heading
@@ -44,7 +43,7 @@ export default function BestSellersProducts() {
       >
         Nossos produtos
       </Heading>
-      <Text textAlign="center">
+      <Text textAlign="center" data-aos="fade-up" data-aos-delay="200">
         Quando o assunto é proteção, cada detalhe faz a diferença. Nossas
         embalagens são feitas com materiais de alta qualidade, garantindo
         resistência contra impactos, umidade e variações climáticas.

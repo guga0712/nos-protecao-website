@@ -20,7 +20,7 @@ import { useState } from "react";
 
 const MotionBox = motion.create(Box);
 
-const Links = ["Produtos", "Quem somos", "Contato"];
+const Links = ["Sobre Nós", "Nossos Produtos", "Contato"];
 
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
@@ -73,6 +73,8 @@ export default function Header() {
             ))}
           </HStack>
           <Button
+            as="a"
+            href="https://wa.me/5511979880930?text=Ol%C3%A1%2C%20eu%20gostaria%20de%20saber%20de%20mais%20produtos%20da%20N%C3%B3s%20Prote%C3%A7%C3%A3o%20de%20Cargas%20e%20Embalagens."
             fontSize={24}
             bg={EColors.orange}
             _hover={{ bg: EColors.darkorange }}
@@ -108,7 +110,7 @@ export default function Header() {
                   borderColor={EColors.orange}
                   key={index}
                   as="a"
-                  href={`#${link.toLowerCase()}`}
+                  href={`#${link.replace(/\s+/g, "").toLowerCase()}`}
                   py="8"
                 >
                   {link}

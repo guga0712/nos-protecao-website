@@ -30,6 +30,7 @@ export default function About() {
       color={EColors.white}
       gap={14}
       pb="100px"
+      id="sobrenós"
     >
       <Heading fontSize={{ base: "30px", lg: "50px" }} color={EColors.orange}>
         Sobre a Nós Proteção

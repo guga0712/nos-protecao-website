@@ -9,10 +9,11 @@ export default function CTA() {
       px={{ base: "4", lg: "100px", xl: "200px" }}
       alignItems="center"
       justifyContent="center"
-      py="100px"
+      py={{ base: "60%", lg: "300px" }}
       flexDir="column"
       textAlign="center"
       gap={10}
+      id="contato"
     >
       <Flex
         flexDir="column"
@@ -31,6 +32,8 @@ export default function CTA() {
           Conte com qualidade, resistência e o melhor custo-benefício.
         </Text>
         <Button
+          as="a"
+          href="https://wa.me/5511979880930?text=Ol%C3%A1%2C%20eu%20gostaria%20de%20saber%20de%20mais%20produtos%20da%20N%C3%B3s%20Prote%C3%A7%C3%A3o%20de%20Cargas%20e%20Embalagens."
           background={EColors.darkblue}
           color={EColors.white}
           _hover={{ background: EColors.deepblue }}

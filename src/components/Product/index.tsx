@@ -10,6 +10,7 @@ import {
   HStack,
   VStack,
 } from "@chakra-ui/react";
+import Link from "next/link";
 
 interface IProductsProps {
   imageUrl: string;
@@ -44,7 +45,13 @@ export default function Product({
           </Heading>
         </HStack>
         <Text wordBreak="break-word">{description}</Text>
-        <Button w={"full"} bgColor={EColors.blue} color={EColors.white}>
+        <Button
+          as="a"
+          href="https://wa.me/5511979880930?text=Ol%C3%A1%2C%20eu%20gostaria%20de%20saber%20de%20mais%20produtos%20da%20N%C3%B3s%20Prote%C3%A7%C3%A3o%20de%20Cargas%20e%20Embalagens."
+          w={"full"}
+          bgColor={EColors.blue}
+          color={EColors.white}
+        >
           Conheça mais
         </Button>
       </VStack>

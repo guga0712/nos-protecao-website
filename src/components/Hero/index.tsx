@@ -41,7 +41,7 @@ export default function Hero() {
           color={EColors.darkblue}
           size="lg"
           as="a"
-          href="#produtos"
+          href="#nossosprodutos"
           _hover={{ background: "var(--orange-700)" }}
           fontWeight="bold"
         >
