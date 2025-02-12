@@ -8,7 +8,7 @@ export default function BestSellersProducts() {
       name: "Filme Stretch",
       description:
         "Ideal para envolvimento e fixação de cargas, proporcionando proteção contra poeira, umidade e movimentação indesejada, alta elasticidade e resistência.",
-      image: "./filme-strech.png",
+      image: "./filme-stretch.png",
     },
     {
       name: "Lonas Plásticas",
@@ -19,8 +19,20 @@ export default function BestSellersProducts() {
     {
       name: "Madeirites",
       description:
-        " Perfeitos para reforço estrutural no transporte de cargas. Duráveis, resistentes e disponíveis em diversas espessuras para atender a qualquer necessidade.",
+        "Perfeitos para reforço estrutural no transporte de cargas. Duráveis, resistentes e disponíveis em diversas espessuras para atender a qualquer necessidade.",
       image: "./madeirite.png",
+    },
+    {
+      name: "Corda Pet",
+      description:
+        "Com resistência e durabilidade, essa corda garante a segurança da sua carga em qualquer transporte.",
+      image: "./corda-pet.webp",
+    },
+    {
+      name: "Cinta e Catraca",
+      description:
+        "Sistema de amarração resistente e seguro, ideal para fixação firme de cargas durante o transporte.",
+      image: "./cinta-catraca.jpeg",
     },
   ];
 
@@ -52,23 +64,19 @@ export default function BestSellersProducts() {
         proteção e durabilidade. Segurança e resistência que fazem a diferença!
       </Text>
       <Flex
-        flexDirection={{ base: "column", lg: "row" }}
-        alignItems={{ base: "center" }}
-        justifyContent="space-between"
-        gap={{ base: "10" }}
-        m="0"
-        p="0"
+        flexWrap="wrap" // Permite que os produtos quebrem para a próxima linha
+        justifyContent="center" // Centraliza os itens na tela
+        gap={6} // Espaçamento uniforme entre os itens
+        w="100%" // Garante que ocupa toda a largura disponível
       >
-        {products.map((product, index) => {
-          return (
-            <Product
-              key={index}
-              imageUrl={product.image}
-              title={product.name}
-              description={product.description}
-            />
-          );
-        })}
+        {products.map((product, index) => (
+          <Product
+            key={index}
+            imageUrl={product.image}
+            title={product.name}
+            description={product.description}
+          />
+        ))}
       </Flex>
     </Flex>
   );
